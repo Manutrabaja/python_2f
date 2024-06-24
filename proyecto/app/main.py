@@ -1,4 +1,4 @@
-import proyecto.app.utils as utils
+import app.utils as utils
 
 data = [
     {

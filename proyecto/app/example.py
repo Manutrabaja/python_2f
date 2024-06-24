@@ -1,2 +1,2 @@
-import proyecto.app.main as main
+import app.main as main
 print(main.data)
