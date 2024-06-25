@@ -1,26 +1,20 @@
-import app.utils as utils
-
-data = [
-    {
-        'Country' : 'Colombia',
-        'Population' : 500
-    },
-    {
-        'Country' : 'Bolivia',
-        'Population' : 300
-    }
-]
+import utils as utils
+import read_csv
+import charts
 
 def run():
-    keys, values = utils.get_population()
-    print(keys, values)
-
-    nombre = input('type Country => ')
+    data = read_csv.read_csv('./proyecto/app/data.csv')
+    nombre = input('type Country =>  ')
     country = nombre.title()
-    print(f'the country',country)
+    print(f'the country', country)
 
     result = utils.population_by_country(data, country)
     print(result)
+
+    labels, values = utils.get_population(country)
+    print(labels, values)
+
+    
 
 if __name__ == '__main__':
     run()
