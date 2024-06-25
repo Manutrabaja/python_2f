@@ -10,16 +10,16 @@
 
 """reutilisando funciones para el proyecto"""
 
-def get_population(country_dict):
+def get_population(result):
     population_dict = {
-        '2022 Population' : country_dict ,
-        '2020' : country_dict['2020 Population'],
-        '2015' : country_dict['2015 Population'],
-        '2010' : country_dict['2010 Population'],
-        '2000' : country_dict['2000 Population'],
-        '1990' : country_dict['1990 Population'],
-        '1980' : country_dict['1980 Population'],
-        '1970' : country_dict['1970 Population'],
+        '1970' : result['1970 Population'],
+        '1980' : result['1980 Population'],
+        '1990' : result['1990 Population'],
+        '2000' : result['2000 Population'],
+        '2010' : result['2010 Population'],
+        '2015' : result['2015 Population'],
+        '2020' : result['2020 Population'],
+        '2022' : result['2022 Population'],
     }
     labels = population_dict.keys() 
     values = population_dict.values()
